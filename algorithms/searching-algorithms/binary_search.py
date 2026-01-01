@@ -1,9 +1,6 @@
 # Algorithm efficiency: O(log n)
 # Works on sorted arrays only so linear search can sometimes be a better choice!
 
-target = int(input())
-arr = list(map(int, input().split()))
-
 def binarySearch(target, arr):
     start = 0
     end = len(arr) - 1
@@ -16,5 +13,3 @@ def binarySearch(target, arr):
         else: return middle
 
     return -1
-
-print(binarySearch(target, arr))
